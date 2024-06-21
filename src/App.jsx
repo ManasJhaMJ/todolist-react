@@ -37,9 +37,9 @@ function App() {
 
   return (
     <TodoProvider value={{ todos, addTodo, deleteTodo, updateTodo, toggleComplete }}>
-      <div className="bg-[#172842] min-h-screen py-8">
+      <div className="bg min-h-screen py-8 flex flex-col items-center">
         <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">
-          <h1 className="text-2xl font-bold text-center mb-8 mt-2">Manage Your Todos</h1>
+          <h1 className="text-4xl font-bold text-center mb-8 mt-2 backdrop-blur-md rounded-lg">BESTO FRIENDO TODO APP</h1>
           <div className="mb-4">
             {/* Todo form goes here */}
             <TodoForm />
@@ -53,6 +53,13 @@ function App() {
               </div>
             ))}
           </div>
+        </div>
+        <div className='text-[#ffffff] w-fit fixed backdrop-blur-lg p-4 px-2 bottom-5 rounded-xl z-10 flex flex-col justify-center items-center'>
+          <h1>React Concepts Used</h1>
+          <ul className='flex flex-wrap items-center gap-4'>
+            <li>localStorage</li>
+            <li>Context API</li>
+          </ul>
         </div>
       </div>
     </TodoProvider>
